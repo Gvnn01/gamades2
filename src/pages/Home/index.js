@@ -11,7 +11,7 @@ function App(props) {
   const history = useHistory()
 
   function valueConversion(value) {
-    value = Number(value.replace(/\,\./g, "")) * 100
+    value = Number(value.replace(/\./g, "")) * 100
     value = Math.round(value)
     const signal = Number(value) < 0 ? "-" : "";
 
