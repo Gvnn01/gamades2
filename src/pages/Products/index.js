@@ -14,7 +14,7 @@ export default function Products() {
 	  } else {
 	    	history.push('/');    
 	  }
-  }, [])
+  }, [history])
   return (
     <S.Container>
       <S.Title>Dados de produtos</S.Title>
